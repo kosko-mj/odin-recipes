@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(152, 254, 249);
+    padding: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='20' y='20' font-size='24' fill='white' opacity='0.8'%3E✽%3C/text%3E%3Ctext x='60' y='60' font-size='24' fill='white' opacity='0.3'%3E❀%3C/text%3E%3C/svg%3E");
+    background-size: 80px 80px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(249, 64, 13);
+    font-family: "Brush Script MT", cursive;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+h1::before {
+    content: "~";
+    margin-right: 15px;
+    font-size: 60px; /* Adjust size */
+    vertical-align: middle;
+}
+
+h1::after {
+    content: "~";
+    margin-left: 15px;
+    font-size: 60px;
+    vertical-align: middle;
+}
+
+nav {
+    text-align: center;
+    margin-top: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+    font-family: "Gill Sans", cursive;
+}
+
+nav a:hover {
+    color: rgb(249, 64, 13);
+}
+
+body.recipe-page {
+    background-color: #f8f4e9;
+    font-family: Georgia, serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    min-height: 100vh;
+}
